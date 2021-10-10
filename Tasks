@@ -1,0 +1,8 @@
+timedatectl - used to change timezone
+useradd - adding a user and a home directory
+  /sbin/nologin is specifically designed to switch a shell and produces output complaining you cannot log-in.
+  /bin/false doesn't give output
+  user without a home directory
+    useradd -M javed or useradd --no-create-home
+yum install ntp - instal ntp service
+ntp.conf - file use to hold th entp servers
