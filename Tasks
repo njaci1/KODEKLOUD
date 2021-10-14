@@ -6,3 +6,10 @@ useradd - adding a user and a home directory
     useradd -M javed or useradd --no-create-home
 yum install ntp - instal ntp service
 ntp.conf - file use to hold th entp servers
+mariaDB service not running
+  Used systemctl status mariadb to find status
+  found status is failed
+  checked error log on /var/log/mariadb and found mariadb had no permission to write on /var/run/mariadb folder
+  did chmod -R g+w mariadb/to add write permission
+  statrted the service using systemctl start mariadb
+  
