@@ -12,4 +12,9 @@ mariaDB service not running
   checked error log on /var/log/mariadb and found mariadb had no permission to write on /var/run/mariadb folder
   did chmod -R g+w mariadb/to add write permission
   statrted the service using systemctl start mariadb
-  
+use vi to find replace text
+  :%s/existing string/replacement string/g 
+    s is search
+    % means from line 1 to last line
+    g is replace all occurrences
+    
